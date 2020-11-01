@@ -1,10 +1,6 @@
 .navbar{
   background-color: white;
 }
-.collapse .navbar-collapse {
-  justify-content: flex-end;
-  padding-right: 2vw;
-}
 .navbar-brand{
   margin-left: 5em;
 }
@@ -15,7 +11,16 @@
 .nav-link:hover{
   color: #fb4c47 !important;
 }
-@media(max-width: 320px){
+.collapse .navbar-collapse{
+  flex-grow: 1 !important;
+}
+@media(min-width: 992px){
+  .navbar-collapse {
+    position: absolute;
+    right: 5%;
+  }
+}
+@media(max-width: 425px){
   .navbar-brand{
     margin-left: 0;
   }
