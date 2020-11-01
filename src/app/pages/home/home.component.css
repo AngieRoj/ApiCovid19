@@ -22,11 +22,15 @@
 .card{
     box-shadow: 0px 0px 35px -12px rgba(0,0,0,0.75);
 }
+.card-body{
+    height: 34em;
+}
 .card:hover{
     border-bottom: 4px solid #fa5652;
 }
 .card-text{
     font-size: 19px;
+    line-height: 1.5em;
 }
 .eclipse-items{
     width: 75px;
@@ -38,7 +42,7 @@
     color: #fa5652;
     font-size: 30px;
     font-weight: bold;
-    padding: 0.4em;
+    padding: 0.8em 0.3em;
 }
 .number-size{
     font-size: 30px;
@@ -54,12 +58,30 @@
     }
     .eclipse-number{
         font-size: 24px;
-        padding:0.2em;
+        padding:0.5em;
     }
     .number-size{
         font-size: 27px;
     }
     .card-text{
         font-size: 15px;
+    }
+    .card-body{
+        height: 30em;
+    }
+    .card-title{
+        font-size: 20px !important;
+        line-height: 1.2em;
+    }
+    .div-eclipse{
+        padding-left: 0 !important;
+    }
+}
+@media(max-width: 425px){
+    .card-body{
+        height: auto;
+    }
+    .div-eclipse{
+        padding-left: 1em !important;
     }
 }

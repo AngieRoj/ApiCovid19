@@ -4,7 +4,7 @@
           <p class="titles blue-titles">
             Analytics by country
           </p>
-          <p class="text-reference">
+          <p class="text-reference pb-5">
             Data from our api
           </p>
         </div>
@@ -12,6 +12,7 @@
     <div class="row">
       <div class="col-sm-12">
         <div class="table-analytics">
+
           <!--Head table-->
           <div class="row text-center">
             <div class="col-4">
@@ -32,7 +33,7 @@
           </div>
 
           <!--Body table-->
-          <div class="row line-grey" *ngFor="let country of countries">
+          <div class="row line-grey" *ngFor="let country of countries | paginate:pageSize:pageNumber">
             <div class="col-4 margin-auto">
               <p class="table-content-countries">{{country.Country}}</p>
             </div>
@@ -43,9 +44,16 @@
 
             <div class="col-4 margin-auto">
               <p class="table-content-countries figures-content">{{country.TotalDeaths}}</p>
-            </div>
+            </div>    
           </div>
         </div>
+
+          
       </div>
     </div>
+    <!--<mat-paginator [length]="countries.length"
+               [pageSize]="pageSize"
+               [pageSizeOptions]="pageSizeOptions"
+               (page)="pageEvent = $event">
+    </mat-paginator>  -->
 </div>

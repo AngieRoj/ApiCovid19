@@ -15,5 +15,9 @@
 .nav-link:hover{
   color: #fb4c47 !important;
 }
-
+@media(max-width: 320px){
+  .navbar-brand{
+    margin-left: 0;
+  }
+}
     

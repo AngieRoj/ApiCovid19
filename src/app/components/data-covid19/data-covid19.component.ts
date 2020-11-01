@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PageEvent } from '@angular/material/paginator';
 import { DataService } from '../../services/data.service';
 
 @Component({
@@ -16,5 +17,14 @@ export class DataCovid19Component implements OnInit {
     this.information.getAllInfectedCountries().subscribe((resp:any) => 
     this.countries=resp.Countries)
   }
+
+  handlePage(e: PageEvent){
+    this.pageSize = e.pageSize
+    this.pageNumber = e.pageIndex + 1
+  }
+ 
+  pageSize: number = 8;
+  pageNumber: number = 1;
+  pageSizeOptions = [5, 10];
 
 }
