@@ -1,12 +1,19 @@
+.navbar{
+  background-color: white;
+}
+.collapse .navbar-collapse {
+  justify-content: flex-end;
+  padding-right: 2vw;
+}
+.navbar-brand{
+  margin-left: 5em;
+}
 .nav-link{
   font-size: 18px;
   color: #035755 !important;
 }
 .nav-link:hover{
-    color: #fb4c47 !important;
+  color: #fb4c47 !important;
 }
-.navbar-main-wrapper .navbar-collapse {
-    justify-content: flex-end !important;
-    padding-right: 2vw !important;
-}
+
     

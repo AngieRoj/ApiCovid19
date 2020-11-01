@@ -1,0 +1,20 @@
+/*Footer*/
+.page-footer{
+    padding-top: 6em;
+}
+.footer-text{
+    color: #00402e !important;
+    font-size: 18px;
+    text-align: center;
+}
+.footer-text:hover{
+    color: #fb4c47 !important;
+}
+.footer-copyright{
+    padding: 2em;
+}
+@media(max-width: 425px){
+    .footer-text{
+        font-size: 14px;
+    }
+}

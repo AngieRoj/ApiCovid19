@@ -1,0 +1,31 @@
+/*table analytics*/
+.table-analytics{
+    box-shadow: 0px 0px 35px -12px rgba(0,0,0,0.75);
+    padding: 2em 3em;
+}
+.table-content-countries{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #13615f;
+}
+.figures-content{
+    color: #035755;
+    text-align: right;
+    font-weight: bold;
+}
+.line-grey{
+    border-bottom: 2px solid #f6ecec;
+    padding-top: 0.5em;
+}
+@media(max-width: 425px){
+    .t-header-titles{
+        font-size: 17px;
+    }
+    .table-content-countries{
+        font-size: 16px;
+    }
+    .figures-content{
+        font-size: 15px;
+    }
+}
