@@ -11,11 +11,11 @@ export class DataCovid19Component implements OnInit {
   public countries:Array<any>=[];
   public page: any;
 
-  constructor(private information: DataService) { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
                                 //obtain values for to be published
-    this.information.getAllInfectedCountries().subscribe((resp:any) => 
+    this.dataService.getAllInfectedCountries().subscribe((resp:any) => 
     this.countries=resp.Countries)
   }
 
