@@ -45,6 +45,9 @@ footer{
     font-weight: bold !important;
     padding-top: 1em;
 }
+.ngx-pagination .current{
+    background-color: #fa5652 !important;
+}
 @media(max-width: 767px){
     footer{
         margin-left: 2em;
@@ -85,3 +88,5 @@ footer{
         font-size: 24px;
     }
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

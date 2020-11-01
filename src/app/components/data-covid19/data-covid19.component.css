@@ -22,6 +22,9 @@
     border-bottom: 2px solid #f6ecec;
     padding-top: 1em;
 }
+.content-pagination{
+    text-align: right;
+}
 @media(max-width: 767px){
     .table-analytics{
         padding: 1.5em;

@@ -33,7 +33,7 @@
           </div>
 
           <!--Body table-->
-          <div class="row line-grey" *ngFor="let country of countries | paginate:pageSize:pageNumber">
+          <div class="row line-grey" *ngFor="let country of countries | paginate: { itemsPerPage: 8, currentPage: page }">
             <div class="col-4 margin-auto">
               <p class="table-content-countries">{{country.Country}}</p>
             </div>
@@ -46,14 +46,20 @@
               <p class="table-content-countries figures-content">{{country.TotalDeaths}}</p>
             </div>    
           </div>
+          <div class="content-pagination p-4">
+              <pagination-controls 
+                (pageChange)="page = $event" 
+                previousLabel=""
+                nextLabel=""
+                autoHide=true
+                maxSize=7
+                >
+            </pagination-controls>
+          </div>
         </div>
 
           
       </div>
     </div>
-    <!--<mat-paginator [length]="countries.length"
-               [pageSize]="pageSize"
-               [pageSizeOptions]="pageSizeOptions"
-               (page)="pageEvent = $event">
-    </mat-paginator>  -->
+    
 </div>
